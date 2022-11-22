@@ -1,28 +1,21 @@
 import React from "react";
 import "./App.css";
+import {add, output} from "./utils/utility";
 
-function App() {
+const App = function() {
+  const sum = add (5 ,9);
+  const output = add (6, 5);
+  
+  
   return (
     <>
-      <nav class="crumbs">
-        <ol>
-          <li class="crumb">
-            <a href="#">Bikes</a>
-          </li>
-          <li class="crumb">
-            <a href="#">BMX</a>
-          </li>
-          <li class="crumb">Jump Bike 3000</li>
-        </ol>
-      </nav>
-
-      <h1>Jump Bike 3000</h1>
-      <p>
-        This BMX bike is a solid step into the pro world. It looks as legit as
-        it rides and is built to polish your skills.
-      </p>
+    <h1>The first sum = {sum +20}</h1>
+    <h2>The second sum = {output + 10}</h2>
     </>
-  );
+
+
+  )
 }
+  
 
 export default App;
